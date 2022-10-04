@@ -184,3 +184,33 @@ const selectTwo = new Select('#selectTwo', {
 
 
 
+const swiper = new Swiper('.hero__swiper', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+
+    autoplay: {
+        delay: 4000,
+    },
+
+    // If we need pagination
+    pagination: {
+      el: '.hero__pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.hero-btn-next',
+      prevEl: '.hero-btn-prev',
+    },
+
+
+    // Responsive breakpoints
+    breakpoints: {
+    // when window width is >= 320px
+    320: {
+    },
+    // when window width is >= 480px
+    480: {
+    },
+  }
+  });
