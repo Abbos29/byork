@@ -667,7 +667,7 @@ nav {
 }
 
 .benefits {
-  padding: 100px 0;
+  padding: 100px 0 50px;
 }
 
 .benefits__title {
@@ -722,6 +722,161 @@ nav {
 .benefits__text {
   font-size: 14px;
   line-height: 22px;
+}
+
+.services {
+  padding: 50px 0;
+}
+
+.services__title {
+  text-align: center;
+}
+
+.services__wrapper {
+  margin: 50px 0;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px 20px;
+  grid-template-areas: "ser-1 ser-1 ser-1 ser-2 ser-2 ser-2 ser-3 ser-3 ser-3 ser-3 ser-3 ser-3" "ser-4 ser-4 ser-4 ser-4 ser-5 ser-5 ser-5 ser-5 ser-6 ser-6 ser-6 ser-6" "ser-7 ser-7 ser-7 ser-7 ser-7 ser-7 ser-8 ser-8 ser-8 ser-8 ser-8 ser-8";
+}
+
+.services__wrapper .ser-5 {
+  grid-area: ser-5;
+}
+
+.services__wrapper .ser-4 {
+  grid-area: ser-4;
+}
+
+.services__wrapper .ser-6 {
+  grid-area: ser-6;
+}
+
+.services__wrapper .ser-7 {
+  grid-area: ser-7;
+}
+
+.services__wrapper .ser-8 {
+  grid-area: ser-8;
+}
+
+.services__wrapper .ser-3 {
+  grid-area: ser-3;
+}
+
+.services__wrapper .ser-1 {
+  grid-area: ser-1;
+}
+
+.services__wrapper .ser-2 {
+  grid-area: ser-2;
+}
+
+.services__item {
+  border-radius: 10px;
+  height: 300px;
+  min-width: 230px;
+  padding: 25px 35px 35px;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.services__item-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.services__item-text {
+  font-size: 14px;
+  line-height: 22px;
+  margin: 6px 0;
+}
+
+.services__item-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  color: #ffffff;
+}
+
+.ser-1 {
+  max-width: 100%;
+  background-image: url(../img/services/ser-1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ser-2 {
+  max-width: 100%;
+  background-image: url(../img/services/ser-2.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ser-3 {
+  max-width: 100%;
+  background-image: url(../img/services/ser-3.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ser-4 {
+  max-width: 100%;
+  background-image: url(../img/services/ser-4.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ser-5 {
+  max-width: 100%;
+  background-image: url(../img/services/ser-5.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ser-6 {
+  max-width: 100%;
+  background-image: url(../img/services/ser-6.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ser-7 {
+  max-width: 100%;
+  background-image: url(../img/services/ser-7.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ser-8 {
+  max-width: 100%;
+  background-image: url(../img/services/ser-8.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 1449.98px) {
@@ -822,6 +977,16 @@ nav {
 
   .catalog__wrapper {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .services__wrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "ser-1 ser-1 ser-2 ser-2" "ser-3 ser-3 ser-4 ser-4" "ser-5 ser-5 ser-6 ser-6" "ser-7 ser-7 ser-8 ser-8";
+  }
+
+  .services__item {
+    padding: 20px 30px 25px;
   }
 }
 
@@ -956,6 +1121,17 @@ nav {
 
   .catalog__wrapper {
     grid-template-columns: 1fr;
+  }
+
+  .services__wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "ser-1" "ser-2" "ser-3" "ser-4" "ser-5" "ser-6" "ser-7" "ser-8";
+  }
+
+  .services__item {
+    padding: 20px;
+    height: auto;
   }
 }
 
