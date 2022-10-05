@@ -605,6 +605,125 @@ nav {
           justify-content: center;
 }
 
+.hero__btn:hover {
+  background: #003b6b;
+}
+
+.catalog {
+  margin: 20px 0;
+}
+
+.catalog__wrapper {
+  gap: 20px;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.catalog__item {
+  max-width: 100%;
+  width: 100%;
+  min-width: 300px;
+  height: 150px;
+  border-radius: 10px;
+  background: #ffffff;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.catalog__item:last-child {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.catalog__item-title {
+  margin-bottom: 8px;
+}
+
+.catalog__offer {
+  max-width: 1060px;
+  width: 100%;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.benefits {
+  padding: 100px 0;
+}
+
+.benefits__title {
+  text-align: center;
+}
+
+.benefits__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 50px 0 0 0;
+  gap: 20px 0;
+}
+
+.benefits__item {
+  max-width: 308px;
+  height: 180px;
+  width: 100%;
+  border-left: 1px solid #767675;
+  border-right: 1px solid #767675;
+  padding: 0 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  gap: 6px;
+}
+
+.benefits__icon {
+  max-width: 42px;
+}
+
+.benefits__name {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.benefits__text {
+  font-size: 14px;
+  line-height: 22px;
+}
+
 @media (max-width: 1449.98px) {
   .navbar-top__box {
     padding: 0 20px 0 10px;
@@ -621,6 +740,10 @@ nav {
   .hero__content {
     max-width: 300px;
     padding: 70px 40px;
+  }
+
+  .catalog__wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -695,6 +818,10 @@ nav {
   .hero__content {
     max-width: 100%;
     height: 300px;
+  }
+
+  .catalog__wrapper {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -825,6 +952,10 @@ nav {
 
   .hero__title img {
     max-width: 150px;
+  }
+
+  .catalog__wrapper {
+    grid-template-columns: 1fr;
   }
 }
 
