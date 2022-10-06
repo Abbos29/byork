@@ -239,4 +239,86 @@ const swiperReview = new Swiper('.review__swiper', {
   //     spaceBetween: 30
   //   },
   // }
-  });
+});
+
+const swiperClients = new Swiper('.clients__swiper', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+
+    // Responsive breakpoints
+    breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+
+    700: {
+        slidesPerView: 3,
+        spaceBetween: 30
+    },
+
+    992: {
+        slidesPerView: 2,
+        spaceBetween: 30
+    },
+
+    1400: {
+        slidesPerView: 3,
+        spaceBetween: 30
+    },
+  }
+});
+
+const swiperLicense = new Swiper('.license__swiper', {
+    slidesPerView: 4,
+    spaceBetween: 30,
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 20
+        },
+        // when window width is >= 480px
+        480: {
+          slidesPerView: 3,
+          spaceBetween: 30
+        },
+    
+        700: {
+            slidesPerView: 4,
+            spaceBetween: 30
+        },
+    
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        },
+    
+        1400: {
+            slidesPerView: 4,
+            spaceBetween: 30
+        },
+
+    }
+
+
+});
