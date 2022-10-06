@@ -1167,6 +1167,7 @@ nav {
 }
 
 .clients__slider {
+  border-radius: 10px;
   margin-top: 40px;
 }
 
@@ -1183,6 +1184,10 @@ nav {
           align-items: center;
 }
 
+.clients__img {
+  border-radius: 10px;
+}
+
 .clients__name {
   position: relative;
   top: -40px;
@@ -1195,6 +1200,7 @@ nav {
 }
 
 .license__slider {
+  border-radius: 10px;
   max-width: 100%;
   width: 100%;
   margin-top: 40px;
@@ -1212,6 +1218,70 @@ nav {
 .license__img {
   max-width: 290px;
   width: 100%;
+  border-radius: 10px;
+}
+
+.license__text {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.doc-review {
+  padding: 50px 0;
+}
+
+.doc-review__title {
+  text-align: center;
+}
+
+.doc-review__swiper {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 25px;
+  margin-top: 25px;
+}
+
+.doc-review__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 0 65px 45px;
+}
+
+.doc-review__img {
+  position: relative;
+  top: -25px;
+  max-width: 88px;
+  max-height: 88px;
+  border-radius: 10px;
+}
+
+.doc-review__name {
+  font-weight: 700;
+  color: #009966;
+}
+
+.doc-review__rank {
+  font-size: 12px;
+}
+
+.doc-review__text {
+  margin-top: 25px;
+  font-size: 14px;
 }
 
 @media (max-width: 1449.98px) {
@@ -1401,6 +1471,14 @@ nav {
 
   .license__slider {
     margin-top: 20px;
+  }
+
+  .doc-review__slide {
+    padding: 0 35px 30px;
+  }
+
+  .doc-review__text {
+    margin-top: 15px;
   }
 }
 
