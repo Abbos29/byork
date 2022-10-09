@@ -188,9 +188,9 @@ const swiper = new Swiper('.hero__swiper', {
     slidesPerView: 1,
     spaceBetween: 20,
 
-    autoplay: {
-        delay: 4000,
-    },
+    // autoplay: {
+    //     delay: 4000,
+    // },
 
     // If we need pagination
     pagination: {
@@ -327,6 +327,33 @@ const swiperLicense = new Swiper('.license__swiper', {
 const swiperDocReview = new Swiper('.doc-review__swiper', {
     slidesPerView: 1,
     spaceBetween: 40,
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+
+  //   // Responsive breakpoints
+  //   breakpoints: {
+  //   // when window width is >= 320px
+  //   320: {
+  //     slidesPerView: 3,
+  //     spaceBetween: 20
+  //   },
+  //   // when window width is >= 480px
+  //   480: {
+  //     slidesPerView: 3,
+  //     spaceBetween: 30
+  //   },
+  // }
+});
+
+
+const swiperLizing = new Swiper('.lizing__swiper', {
+    slidesPerView: 1,
+    spaceBetween: 70,
   
     // Navigation arrows
     navigation: {
