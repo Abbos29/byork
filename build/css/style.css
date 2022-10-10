@@ -126,18 +126,18 @@ h6 {
 
 @font-face {
   font-family: "CodeNext";
-  src: url("../../fonts/Code Next Bold.ttf") format("ttf");
-  src: url("../../fonts/CodeNext-Trial-Bold.woff") format("woff");
-  src: url("../../fonts/CodeNext-Trial-Bold.woff2") format("woff2");
+  src: url("./../fonts/Code Next Bold.ttf") format("ttf");
+  src: url("./../fonts/CodeNext-Trial-Bold.woff") format("woff");
+  src: url("./../fonts/CodeNext-Trial-Bold.woff2") format("woff2");
   font-style: normal;
   font-weight: 700;
 }
 
 @font-face {
   font-family: "CodeNext";
-  src: url("../../fonts/Code Next Book.ttf") format("ttf");
-  src: url("../../fonts/CodeNext-Trial-Book.woff") format("woff");
-  src: url("../../fonts/CodeNext-Trial-Book.woff2") format("woff2");
+  src: url("./../fonts/Code Next Book.ttf") format("ttf");
+  src: url("./../fonts/CodeNext-Trial-Book.woff") format("woff");
+  src: url("./../fonts/CodeNext-Trial-Book.woff2") format("woff2");
   font-style: normal;
   font-weight: 400;
 }
