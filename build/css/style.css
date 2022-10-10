@@ -2809,6 +2809,11 @@ nav {
     gap: 20px;
   }
 
+  .review__content-title {
+    font-size: 26px;
+    line-height: 36px;
+  }
+
   .review__user {
     height: 300px;
   }
