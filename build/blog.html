@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Landing Page">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Рентгенология и томография</title>
+    <title>Блог</title>
 
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -127,231 +127,144 @@
 <!-- Main Page -->
 <main>
 
-<!-- Tomografiya -->
-<section class="catalog tomografiya">
+<!-- Blog-list -->
+<section class="blog-list">
     <div class="container">
 
-        <ul class="beard__menu">
-            <li class="beard__item"><a href="index.html">главная</a></li>
+        <div class="blog-list__top">
+            <p class="blog-list__title section-title">Блог</p>
 
-            <p class="beard__arrow">...</p>
+            <input class="blog-list__search" type="search" placeholder="Поиск по блогу ...">
 
-            <li class="beard__item"><a href="index.html">каталог товаров</a></li>
+            <div class="blog-list__sort">
+                <p class="blog-list__sort-text">сортировать</p>
 
-            <p class="beard__arrow">...</p>
+                <a class="blog-list__sort-btn" href="#">
+                    по дате
+                    <img src="./img/down-arrow.png" alt="arrow">
+                </a>
+            </div>
+        </div>
+        
+        <div class="blog-list__wrapper">
+            <div class="useful__item">
+                <p class="useful__date">2022</p>
 
-            <li class="beard__item beard__item-active"><a href="02_01.html">рентгенология и томография</a></li>
-        </ul>
+                <img class="useful__img" src="./img/useful/useful-1.png" alt="useful-img">
 
+                <div class="useful__box">
+                    <p class="useful__title content-title">Как</p>
 
-        <div class="catalog__wrapper">
-            <div class="catalog__menu">
+                    <p class="useful__text">Рентгенология</p>
 
-                <div class="accordion">
-                    <div class="accordion__item">
-                        <div class="accordion__item-trigger">
-                            <div class="trigger__text">Акушерство и гинекология </div>
-                        </div>
-
-                        <div class="accordion__item-content">
-                            <a class="content__text" href="#">Реанимация</a>
-                            <a class="content__text" href="#">Реанимация</a>
-                            <a class="content__text" href="#">Реанимация</a>
-                        </div>
-                    </div>
-
-                    <div class="accordion__item">
-                        <div class="accordion__item-trigger">
-                            <div class="trigger__text">Гибкая эндоскопия </div>
-                        </div>
-
-                        <div class="accordion__item-content">
-                            <a class="content__text" href="#">Реанимация</a>
-                            <a class="content__text" href="#">Реанимация</a>
-                            <a class="content__text" href="#">Реанимация</a>
-                        </div>
-                    </div>
-
-                    <div class="accordion__item">
-                        <div class="accordion__item-trigger">
-                            <div class="trigger__text">Мобильные кабинеты </div>
-                        </div>
-
-                        <div class="accordion__item-content">
-                            <a class="content__text" href="#">Реанимация</a>
-                            <a class="content__text" href="#">Реанимация</a>
-                            <a class="content__text" href="#">Реанимация</a>
-                        </div>
-                    </div>
-
-                    <div class="accordion__item">
-                        <div class="accordion__item-trigger">
-                            <div class="trigger__text">Оториноларингология </div>
-                        </div>
-
-                        <div class="accordion__item-content">
-                            <a class="content__text" href="#">Реанимация</a>
-                            <a class="content__text" href="#">Реанимация</a>
-                            <a class="content__text" href="#">Реанимация</a>
-                        </div>
-                    </div>
-
-                    <div class="accordion__item">
-                        <div class="accordion__item-trigger">
-                            <div class="trigger__text">Реанимация </div>
-                        </div>
-
-                        <div class="accordion__item-content">
-                            <a class="content__text" href="#">Реанимация</a>
-                            <a class="content__text" href="#">Реанимация</a>
-                            <a class="content__text" href="#">Реанимация</a>
-                        </div>
-                    </div>
-
-                    <div class="accordion__item accordion__item-active">
-                        <div class="accordion__item-trigger">
-                            <div class="trigger__text">Рентгенология и томография </div>
-                        </div>
-
-                        <div class="accordion__item-content">
-                            <a class="content__text" href="#">Рентгенология</a>
-                            <a class="content__text" href="#">Томография</a>
-                            <a class="content__text" href="#">Негатоскопы</a>
-                        </div>
-                    </div>
-
-                    <div class="accordion__item">
-                        <div class="accordion__item-trigger">
-                            <div class="trigger__text">Скорая помощь </div>
-                        </div>
-
-                        <div class="accordion__item-content">
-                            <a class="content__text" href="#">Реанимация</a>
-                            <a class="content__text" href="#">Реанимация</a>
-                            <a class="content__text" href="#">Реанимация</a>
-                        </div>
-                    </div>
-
-                    <div class="accordion__item">
-                        <div class="accordion__item-trigger">
-                            <div class="trigger__text">Стерилизация</div>
-                        </div>
-
-                        <div class="accordion__item-content">
-                            <a class="content__text" href="#">Реанимация</a>
-                            <a class="content__text" href="#">Реанимация</a>
-                            <a class="content__text" href="#">Реанимация</a>
-                        </div>
-                    </div>
-
-                    <div class="accordion__item">
-                        <div class="accordion__item-trigger">
-                            <div class="trigger__text">Урология </div>
-                        </div>
-
-                        <div class="accordion__item-content">
-                            <a class="content__text" href="#">Реанимация</a>
-                            <a class="content__text" href="#">Реанимация</a>
-                            <a class="content__text" href="#">Реанимация</a>
-                        </div>
-                    </div>
-
-                    <div class="accordion__item">
-                        <div class="accordion__item-trigger">
-                            <div class="trigger__text">Физиотерапия и реабилитация</div>
-                        </div>
-
-                        <div class="accordion__item-content">
-                            <a class="content__text" href="#">Реанимация</a>
-                            <a class="content__text" href="#">Реанимация</a>
-                            <a class="content__text" href="#">Реанимация</a>
-                        </div>
-                    </div>
-
-                    <div class="accordion__item">
-                        <div class="accordion__item-trigger">
-                            <div class="trigger__text">Функциональная диагностика </div>
-                        </div>
-
-                        <div class="accordion__item-content">
-                            <a class="content__text" href="#">Реанимация</a>
-                            <a class="content__text" href="#">Реанимация</a>
-                            <a class="content__text" href="#">Реанимация</a>
-                        </div>
-                    </div>
-
-                    <div class="accordion__item">
-                        <div class="accordion__item-trigger">
-                            <div class="trigger__text">Хирургия </div>
-                        </div>
-
-                        <div class="accordion__item-content">
-                            <a class="content__text" href="#">Реанимация</a>
-                            <a class="content__text" href="#">Реанимация</a>
-                            <a class="content__text" href="#">Реанимация</a>
-                        </div>
-                    </div>
-
-                    <div class="accordion__item">
-                        <div class="accordion__item-trigger">
-                            <div class="trigger__text">Ветеринария </div>
-                        </div>
-
-                        <div class="accordion__item-content">
-                            <a class="content__text" href="#">Реанимация</a>
-                            <a class="content__text" href="#">Реанимация</a>
-                            <a class="content__text" href="#">Реанимация</a>
-                        </div>
-                    </div>
-
-                    
+                    <a class="useful__link" href="#">читать полностью</a>
                 </div>
-
             </div>
 
-            <div class="catalog__content">
+            <div class="useful__item">
+                <p class="useful__date">2022</p>
 
-                <div class="catalog__banner">
-                    <p class="catalog__banner-title section-title">Рентгенология и томография </p>
+                <img class="useful__img" src="./img/useful/useful-1.png" alt="useful-img">
+
+                <div class="useful__box">
+                    <p class="useful__title content-title">Как</p>
+
+                    <p class="useful__text">Рентгенология</p>
+
+                    <a class="useful__link" href="#">читать полностью</a>
                 </div>
-
-                <div class="catalog__content-menu">
-                    <div class="catalog__item">
-                        <img class="catalog__item-img" src="./img/catalog/tomografiya/item-1.png" alt="catalog-img">
-
-                        <div class="catalog__item-box">
-                            <p class="catalog__item-title content-title">Рентгенология</p>
-                            <a class="catalog__item-link" href="02_02.html">всего 1 товар</a>
-                        </div>
-                    </div>
-
-                    <div class="catalog__item">
-                        <img class="catalog__item-img" src="./img/catalog/tomografiya/item-2.png" alt="catalog-img">
-
-                        <div class="catalog__item-box">
-                            <p class="catalog__item-title content-title">Томография</p>
-                            <a class="catalog__item-link" href="02_02.html">всего 3 товара</a>
-                        </div>
-                    </div>
-
-                    <div class="catalog__item">
-                        <img class="catalog__item-img" src="./img/catalog/tomografiya/item-3.png" alt="catalog-img">
-
-                        <div class="catalog__item-box">
-                            <p class="catalog__item-title content-title">Негатоскопы</p>
-                            <a class="catalog__item-link" href="02_02.html">всего 12 товаров</a>
-                        </div>
-                    </div>
-                </div>
-
-                <p class="catalog__content-text">Не следует, однако забывать, что реализация намеченных плановых заданий позволяет выполнять важные задания по разработке дальнейших направлений развития. С другой стороны рамки и место обучения кадров <span class="bold">позволяет выполнять важные задания</span>  по разработке модели развития. Не следует, однако забывать, что укрепление и развитие структуры требуют от нас анализа существенных финансовых и административных условий. Повседневная практика показывает, что рамки и место обучения кадров требуют от нас анализа новых предложений.</p>
-
-                <p class="catalog__content-text"><span class="bold green">Таким образом консультация с широким активом</span> представляет собой интересный эксперимент проверки новых предложений. Таким образом сложившаяся структура организации представляет собой интересный эксперимент проверки форм развития. Разнообразный и богатый опыт рамки и место обучения кадров требуют от нас анализа направлений прогрессивного развития.</p>
-
-                <p class="catalog__content-text">Не следует, однако забывать, что реализация намеченных плановых заданий позволяет выполнять важные задания по разработке дальнейших направлений развития. С другой стороны рамки и место обучения кадров <span class="bold">позволяет выполнять важные задания</span>  по разработке модели развития. Не следует, однако забывать, что укрепление и развитие структуры требуют от нас анализа существенных финансовых и административных условий. Повседневная практика показывает, что рамки и место обучения кадров требуют от нас анализа новых предложений.</p>
-
-
             </div>
+
+            <div class="useful__item">
+                <p class="useful__date">2022</p>
+
+                <img class="useful__img" src="./img/useful/useful-1.png" alt="useful-img">
+
+                <div class="useful__box">
+                    <p class="useful__title content-title">Как</p>
+
+                    <p class="useful__text">Рентгенология</p>
+
+                    <a class="useful__link" href="#">читать полностью</a>
+                </div>
+            </div>
+
+            <div class="useful__item">
+                <p class="useful__date">2022</p>
+
+                <img class="useful__img" src="./img/useful/useful-1.png" alt="useful-img">
+
+                <div class="useful__box">
+                    <p class="useful__title content-title">Как</p>
+
+                    <p class="useful__text">Рентгенология</p>
+
+                    <a class="useful__link" href="#">читать полностью</a>
+                </div>
+            </div>
+
+            <div class="useful__item">
+                <p class="useful__date">2022</p>
+
+                <img class="useful__img" src="./img/useful/useful-1.png" alt="useful-img">
+
+                <div class="useful__box">
+                    <p class="useful__title content-title">Как</p>
+
+                    <p class="useful__text">Рентгенология</p>
+
+                    <a class="useful__link" href="#">читать полностью</a>
+                </div>
+            </div>
+
+            <div class="useful__item">
+                <p class="useful__date">2022</p>
+
+                <img class="useful__img" src="./img/useful/useful-1.png" alt="useful-img">
+
+                <div class="useful__box">
+                    <p class="useful__title content-title">Как</p>
+
+                    <p class="useful__text">Рентгенология</p>
+
+                    <a class="useful__link" href="#">читать полностью</a>
+                </div>
+            </div>
+
+            <div class="useful__item">
+                <p class="useful__date">2022</p>
+
+                <img class="useful__img" src="./img/useful/useful-1.png" alt="useful-img">
+
+                <div class="useful__box">
+                    <p class="useful__title content-title">Как</p>
+
+                    <p class="useful__text">Рентгенология</p>
+
+                    <a class="useful__link" href="#">читать полностью</a>
+                </div>
+            </div>
+
+            <div class="useful__item">
+                <p class="useful__date">2022</p>
+
+                <img class="useful__img" src="./img/useful/useful-1.png" alt="useful-img">
+
+                <div class="useful__box">
+                    <p class="useful__title content-title">Как</p>
+
+                    <p class="useful__text">Рентгенология</p>
+
+                    <a class="useful__link" href="#">читать полностью</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog-list__download-btn">
+            <a href="#">
+                загрузить еще
+                <img src="./img/sync.png" alt="sync">
+            </a>
         </div>
 
     </div>
@@ -429,79 +342,6 @@
     </div>
 </section>
 
-<!-- Useful -->
-<section class="useful">
-    <div class="container">
-
-        <div class="useful__grid">
-
-            <p class="useful__top-title section-title">Полезная информация, при выборе чего-то</p>
-
-            <a class="useful__btn" href="#">перейти в блог</a>
-    
-            <div class="useful__wrapper">
-                <div class="useful__item">
-                    <p class="useful__date">2022</p>
-    
-                    <img class="useful__img" src="./img/useful/useful-1.png" alt="useful-img">
-    
-                    <div class="useful__box">
-                        <p class="useful__title content-title">Как</p>
-    
-                        <p class="useful__text">Рентгенология</p>
-    
-                        <a class="useful__link" href="#">читать полностью</a>
-                    </div>
-                </div>
-
-                <div class="useful__item">
-                    <p class="useful__date">2022</p>
-    
-                    <img class="useful__img" src="./img/useful/useful-1.png" alt="useful-img">
-    
-                    <div class="useful__box">
-                        <p class="useful__title content-title">Как</p>
-    
-                        <p class="useful__text">Рентгенология</p>
-    
-                        <a class="useful__link" href="#">читать полностью</a>
-                    </div>
-                </div>
-
-                <div class="useful__item">
-                    <p class="useful__date">2022</p>
-    
-                    <img class="useful__img" src="./img/useful/useful-1.png" alt="useful-img">
-    
-                    <div class="useful__box">
-                        <p class="useful__title content-title">Как</p>
-    
-                        <p class="useful__text">Рентгенология</p>
-    
-                        <a class="useful__link" href="#">читать полностью</a>
-                    </div>
-                </div>
-
-                <div class="useful__item">
-                    <p class="useful__date">2022</p>
-    
-                    <img class="useful__img" src="./img/useful/useful-1.png" alt="useful-img">
-    
-                    <div class="useful__box">
-                        <p class="useful__title content-title">Как</p>
-    
-                        <p class="useful__text">Рентгенология</p>
-    
-                        <a class="useful__link" href="#">читать полностью</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-</section>
-
 <!-- Benefits -->
 <section class="benefits">
     <div class="container">
@@ -550,6 +390,7 @@
 
     </div>
 </section>
+
 
 
 </main>
@@ -646,7 +487,8 @@
 
 </body>
 
-<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> -->
+<!-- <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="./js/scripts.min.js"></script>
 
 </html>
