@@ -845,6 +845,7 @@ nav {
 }
 
 .benefits {
+  margin-top: 50px;
   padding: 0 0 50px;
 }
 
@@ -3224,6 +3225,75 @@ nav {
 
 .blog .blog-next {
   background: #004d8c;
+}
+
+.news-list__wrapper {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px 20px;
+  grid-template-areas: "new-1 new-1 new-4 new-6" "new-1 new-1 new-4 new-6" "new-1 new-1 new-4 new-7" "new-1 new-1 new-4 new-7" "new-1 new-1 new-5 new-8" "new-2 new-3 new-5 new-8" "new-2 new-3 new-5 new-9" "new-2 new-3 new-5 new-9";
+}
+
+.news-list__wrapper .new-1 {
+  grid-area: new-1;
+}
+
+.news-list__wrapper .new-2 {
+  grid-area: new-2;
+}
+
+.news-list__wrapper .new-3 {
+  grid-area: new-3;
+}
+
+.news-list__wrapper .new-4 {
+  grid-area: new-4;
+}
+
+.news-list__wrapper .new-5 {
+  grid-area: new-5;
+}
+
+.news-list__wrapper .new-6 {
+  grid-area: new-6;
+}
+
+.news-list__wrapper .new-7 {
+  grid-area: new-7;
+}
+
+.news-list__wrapper .new-8 {
+  grid-area: new-8;
+}
+
+.news-list__wrapper .new-9 {
+  grid-area: new-9;
+}
+
+.news__item {
+  border-radius: 10px;
+  max-height: 100%;
+  height: 100%;
+}
+
+.news__img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.news__box {
+  margin-top: auto;
+  background: #ffffff;
+  padding: 35px;
+}
+
+.news__date {
+  width: 100%;
+  height: 100%;
+  margin-top: auto;
 }
 
 .footer {
