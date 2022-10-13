@@ -52,6 +52,27 @@ function fixedNav() {
 window.addEventListener('scroll', fixedNav)
 
  
+// Аккордеон
+function accordion() {
+    const items = document.querySelectorAll('.accordion__item-trigger')
+    items.forEach(item => {
+        item.addEventListener('click', () => {
+            const parent = item.parentNode
+            if (parent.classList.contains('accordion__item-active')) {
+                parent.classList.remove('accordion__item-active')
+            } else {
+                document
+                    .querySelectorAll('.accordion__item')
+                    .forEach(child => child.classList.remove('accordion__item-active'))   
+                parent.classList.add('accordion__item-active')
+            }
+        })
+    })
+}
+accordion() 
+
+
+
 const swiper = new Swiper('.hero__swiper', {
     slidesPerView: 1,
     spaceBetween: 20,
@@ -325,29 +346,33 @@ const swiperTabs = new Swiper(".tabs__swiper", {
 
 
 
+// BLOG SLIDER
 
- 
-// Аккордеон
-function accordion() {
-    const items = document.querySelectorAll('.accordion__item-trigger')
-    items.forEach(item => {
-        item.addEventListener('click', () => {
-            const parent = item.parentNode
-            if (parent.classList.contains('accordion__item-active')) {
-                parent.classList.remove('accordion__item-active')
-            } else {
-                document
-                    .querySelectorAll('.accordion__item')
-                    .forEach(child => child.classList.remove('accordion__item-active'))   
-                parent.classList.add('accordion__item-active')
-            }
-        })
-    })
-}
-accordion() 
+const swiperBlog = new Swiper('.blog__swiper', {
+    slidesPerView: 1,
+    spaceBetween: 40,
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
 
-
-
+  //   // Responsive breakpoints
+  //   breakpoints: {
+  //   // when window width is >= 320px
+  //   320: {
+  //     slidesPerView: 3,
+  //     spaceBetween: 20
+  //   },
+  //   // when window width is >= 480px
+  //   480: {
+  //     slidesPerView: 3,
+  //     spaceBetween: 30
+  //   },
+  // }
+}); 
 // TABS
 
 function tabs(headerSelector, tabSelector, contentSelector, activeClass, display='flex') {
