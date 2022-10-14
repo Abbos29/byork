@@ -3450,6 +3450,39 @@ nav {
   color: #ffffff;
 }
 
+.partners__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.partners__item {
+  max-width: 330px;
+  width: 100%;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.partners__item img {
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+.partners .clients__wrapper2 {
+  margin-top: 60px;
+  max-width: 100%;
+  width: 100%;
+}
+
 .footer {
   background: #2b2a29;
   padding: 80px 0;
@@ -4247,6 +4280,10 @@ nav {
 
   .section-title {
     font-size: 20px;
+  }
+
+  .section-pretitle {
+    font-size: 16px;
   }
 
   .date {
