@@ -51,7 +51,19 @@ function fixedNav() {
 }
 window.addEventListener('scroll', fixedNav)
 
- 
+
+
+
+// DROPDOWN CATALOG
+
+
+// document.getElementById('dropdownBtn').onclick = function() {
+//     document.getElementById('dropdownMenu').classList.toggle('active-drop');
+//     document.getElementById('bgGray').classList.toggle('bg-gray-active');
+//     document.getElementById('body').classList.toggle('lock');
+    
+//     document.getElementById('dropdownBtn').innerHTML = "<img src='./img/close.png'> закрыть";
+// } 
 // Аккордеон
 function accordion() {
     const items = document.querySelectorAll('.accordion__item-trigger')
@@ -70,7 +82,6 @@ function accordion() {
     })
 }
 accordion() 
-
 
 
 const swiper = new Swiper('.hero__swiper', {
@@ -452,7 +463,9 @@ const swiperBenefits = new Swiper('.benefits__swiper', {
         
     },
   }
-}); 
+});
+
+ 
 // TABS
 
 function tabs(headerSelector, tabSelector, contentSelector, activeClass, display='flex') {
