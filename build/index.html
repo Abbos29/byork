@@ -7,7 +7,7 @@
 	<meta name="description" content="Landing Page">
 	<meta name="viewport"
 		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<title>Byork Landing Page</title>
+	<title>Главная страница | BYORK</title>
 
 	<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -293,8 +293,9 @@
     <div class="pop-btn" id="popBtn">
         <p class="pop-btn__text">
             Узнайте <span class="bold">как выбрать подходящее оборудование</span> и быстро окупить его.
-
-            <img class="pop-btn__close" id="closeBtn" src="./img/close.png" alt="close">
+            <button class="pop-btn__close">
+                <img id="closeBtn" src="./img/close.png" alt="close">
+            </button>
         </p>
     </div>
 
@@ -322,10 +323,16 @@
 
                 <div class="hero__btns">
                     <div class="hero-btn-prev swiper-button-prev">
-                        <svg width="24" height="24" fill="white"><path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"/></svg>
+                        <svg width="24" height="24" fill="white">
+                            <path
+                                d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z" />
+                            </svg>
                     </div>
                     <div class="hero-btn-next swiper-button-next">
-                        <svg width="24" height="24" fill="white"><path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"/></svg>
+                        <svg width="24" height="24" fill="white">
+                            <path
+                                d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z" />
+                            </svg>
                     </div>
                 </div>
             </div>
@@ -341,6 +348,18 @@
         </div>
     </div>
 </section>
+<script>
+    let popBtn = document.querySelector('.pop-btn');
+    let popBtnClose = document.querySelector('.pop-btn__close');
+
+    popBtnClose.addEventListener('click', function () {
+        popBtn.style.opacity = '0';
+
+        setTimeout(() => {
+            popBtn.style.display = 'none';
+        }, 250);
+    });
+</script>
 
 		<!-- Catalog-list -->
 		<section class="catalog-list" id="catalog-list">
@@ -1272,5 +1291,5 @@
 
 <!-- <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-<script src="./js/scripts.min.js"></script>
+<script src="./js/scripts.js"></script>
 </html>

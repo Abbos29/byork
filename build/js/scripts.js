@@ -32,8 +32,6 @@ function burgerMenu() {
             body.classList.remove("locked");
         }
     });
-
-
 }
 burgerMenu();
 
@@ -61,14 +59,13 @@ catalogBtn.onclick = function () {
     catalogBtn.querySelector(".dropdown-btn-close").classList.toggle("active");
     catalogBtn.querySelector(".dropdown-btn-open").classList.toggle("active");
     // document.getElementById("bgGray").classList.toggle("bg-gray-active");
-
 };
 
 const header = document.querySelector('header');
 const drMenu = document.getElementById("dropdownMenu");
 
 drMenu.style.height = "calc(100vh - " + header.offsetHeight + "px)";
-// 
+ 
 
  
 // Аккордеон
@@ -473,43 +470,47 @@ const swiperBenefits = new Swiper('.benefits__swiper', {
 });
 
  
-// TABS
-
-function tabs(headerSelector, tabSelector, contentSelector, activeClass, display='flex') {
-    const header = document.querySelector(headerSelector),
-          tab = document.querySelectorAll(tabSelector),
-          content = document.querySelectorAll(contentSelector)
-    function hideTabContent() {
-        content.forEach(item => {
-            item.style.display = 'none'
-        });
-        tab.forEach(item => {
-            item.classList.remove(activeClass)
-        });
-    }
-    function showTabContent(i = 0) {
-       content[i].style.display = display
-       tab[i].classList.add(activeClass)
-    }
-    hideTabContent()
-    showTabContent()
-    header.addEventListener('click', e => {
-        const target = e.target
-        if (target.classList.contains(tabSelector.replace(/\./, '')) || 
-        target.parentNode.classList.contains(tabSelector.replace(/\./, ''))) {
-            tab.forEach((item, i) => {
-                if ( target == item || target.parentNode == item ) {
-                    hideTabContent()
-                    showTabContent(i)
-                }
+if(window.location.toString().indexOf('product.htm')>0)
+{
+    // TABS
+    
+    function tabs(headerSelector, tabSelector, contentSelector, activeClass, display='flex') {
+        const header = document.querySelector(headerSelector),
+              tab = document.querySelectorAll(tabSelector),
+              content = document.querySelectorAll(contentSelector)
+        function hideTabContent() {
+            content.forEach(item => {
+                item.style.display = 'none'
+            });
+            tab.forEach(item => {
+                item.classList.remove(activeClass)
             });
         }
-    })
+        function showTabContent(i = 0) {
+           content[i].style.display = display
+           tab[i].classList.add(activeClass)
+        }    
+        hideTabContent()
+        showTabContent()
+        header.addEventListener('click', e => {
+            const target = e.target
+            if (target.classList.contains(tabSelector.replace(/\./, '')) || 
+            target.parentNode.classList.contains(tabSelector.replace(/\./, ''))) {
+                tab.forEach((item, i) => {
+                    if ( target == item || target.parentNode == item ) {
+                        hideTabContent()
+                        showTabContent(i)
+                    }
+                });
+            }
+        })
+    }
+    
+    // ПЕРВЫЙ аргумент - класс всего нашего хедера табов.
+    // ВТОРОЙ аргумент - класс конкретного элемента, при клике на который будет переключатся таб.
+    // ТРЕТИЙ аргумент - класс того блока, который будет переключаться.
+    // ЧЕТВЕРТЫЙ аргумент - класс активности, который будет добавлятся для таба, который сейчас активен.
+    tabs( '.tabs__header' ,'.tabs__header-item', '.tabs__content-item', 'active')
 }
 
-// ПЕРВЫЙ аргумент - класс всего нашего хедера табов.
-// ВТОРОЙ аргумент - класс конкретного элемента, при клике на который будет переключатся таб.
-// ТРЕТИЙ аргумент - класс того блока, который будет переключаться.
-// ЧЕТВЕРТЫЙ аргумент - класс активности, который будет добавлятся для таба, который сейчас активен.
-tabs( '.tabs__header' ,'.tabs__header-item', '.tabs__content-item', 'active')
  
