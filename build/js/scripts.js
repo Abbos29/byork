@@ -52,7 +52,7 @@ window.addEventListener("scroll", fixedNav);
 // DROPDOWN CATALOG
 const catalogBtn = document.getElementById("dropdownBtn");
 
-catalogBtn.onclick = function () {
+catalogBtn.onmouseover = function () {
     catalogBtn.classList.toggle("white");
     document.getElementById("dropdownMenu").classList.toggle("active-drop");
     document.body.classList.toggle("lock");
@@ -68,26 +68,6 @@ drMenu.style.height = "calc(100vh - " + header.offsetHeight + "px)";
  
 
  
-// Аккордеон
-function accordion() {
-    const items = document.querySelectorAll('.accordion__item-trigger')
-    items.forEach(item => {
-        item.addEventListener('click', () => {
-            const parent = item.parentNode
-            if (parent.classList.contains('accordion__item-active')) {
-                parent.classList.remove('accordion__item-active')
-            } else {
-                document
-                    .querySelectorAll('.accordion__item')
-                    .forEach(child => child.classList.remove('accordion__item-active'))   
-                parent.classList.add('accordion__item-active')
-            }
-        })
-    })
-}
-accordion() 
-
-
 const swiper = new Swiper('.hero__swiper', {
     slidesPerView: 1,
     spaceBetween: 20,
@@ -470,6 +450,26 @@ const swiperBenefits = new Swiper('.benefits__swiper', {
 });
 
  
+// Аккордеон
+function accordion() {
+    const items = document.querySelectorAll('.accordion__item-trigger')
+    items.forEach(item => {
+        item.addEventListener('click', () => {
+            const parent = item.parentNode
+            if (parent.classList.contains('accordion__item-active')) {
+                parent.classList.remove('accordion__item-active')
+            } else {
+                document
+                    .querySelectorAll('.accordion__item')
+                    .forEach(child => child.classList.remove('accordion__item-active'))   
+                parent.classList.add('accordion__item-active')
+            }
+        })
+    })
+}
+accordion() 
+
+
 if(window.location.toString().indexOf('product.htm')>0)
 {
     // TABS

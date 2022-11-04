@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> -->
 
+    <link rel="stylesheet" href="./src/scss/libs/nouislider.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="icon" href="./img/favicon.svg">
     <link rel="stylesheet" href="./css/style.min.css">
@@ -351,7 +352,8 @@
                 <div class="filter__price">
                     <p class="section-text-sm">цена. руб.</p>
 
-                    <input class="filter__price-range" type="range">
+                    <input class="filter__price-range" id="range" type="range">
+                    <!-- <div class="filter__price-range" id="range"></div> -->
 
                     <div class="filter__price-inner">
                         <input class="filter__price-input" type="number">
@@ -374,17 +376,19 @@
                 <div class="filter__mark">
                     <p class="section-text-sm">марка</p>
 
-                    <div id="selectMark">
-                        <input type="hidden" class="hidden__input">
-                    </div>
+                    <a class="category__sort-btn" href="#">
+                        samsung
+                        <img src="./img/down-arrow.png" alt="arrow">
+                    </a>
                 </div>
 
                 <div class="filter__country">
                     <p class="section-text-sm">страна производитель</p>
 
-                    <div id="selectCountry">
-                        <input type="hidden" class="hidden__input">
-                    </div>
+                    <a class="category__sort-btn" href="#">
+                        китай
+                        <img src="./img/down-arrow.png" alt="arrow">
+                    </a>
                 </div>
 
                 <div class="filter__have">
@@ -436,9 +440,9 @@
 
                         <p class="category__product-prename">инжекторы</p>
 
-                        <p class="category__product-no-have">
-                            <img src="./img/category/no-have.png" alt="ellipse">
-                            нет в наличии
+                        <p class="category__product-have">
+                            <img src="./img/category/have.png" alt="ellipse">
+                            в наличии
                         </p>
 
                         <ul class="category__product-list">
@@ -486,9 +490,9 @@
 
                         <p class="category__product-prename">инжекторы</p>
 
-                        <p class="category__product-no-have">
-                            <img src="./img/category/no-have.png" alt="ellipse">
-                            нет в наличии
+                        <p class="category__product-have">
+                            <img src="./img/category/have.png" alt="ellipse">
+                            в наличии
                         </p>
 
                         <ul class="category__product-list">
@@ -580,6 +584,8 @@
     </div>
 </section>
 
+
+
 <!-- Benefits -->
 <section class="benefits">
     <div class="container">
@@ -592,7 +598,7 @@
 
                 <div class="benefits__slider swiper-wrapper">
 
-                    <div class="benefits__slide swiper-slide">
+                    <div class="benefits__slide swiper-slide ben-1">
                         <div class="benefits__item">
                             <img class="benefits__icon" src="./img/benefits/1.png" alt="benefits-img">
             
@@ -602,7 +608,7 @@
                         </div>
                     </div>
 
-                    <div class="benefits__slide swiper-slide">
+                    <div class="benefits__slide swiper-slide ben-2">
                         <div class="benefits__item">
                             <img class="benefits__icon" src="./img/benefits/2.png" alt="benefits-img">
             
@@ -612,7 +618,7 @@
                         </div>
                     </div>
 
-                    <div class="benefits__slide swiper-slide">
+                    <div class="benefits__slide swiper-slide ben-3">
                         <div class="benefits__item">
                             <img class="benefits__icon" src="./img/benefits/3.png" alt="benefits-img">
             
@@ -622,7 +628,7 @@
                         </div>
                     </div>
 
-                    <div class="benefits__slide swiper-slide">
+                    <div class="benefits__slide swiper-slide ben-4">
                         <div class="benefits__item">
                             <img class="benefits__icon" src="./img/benefits/4.png" alt="benefits-img">
             
@@ -721,7 +727,7 @@
                     <div class="footer__inner-right">
                         <p class="footer__inner-title">e-mail</p>
 
-                        <p class="footer__inner-text">info@byork.uz</p>
+                        <a class="footer__inner-text email-link" href="mailto:info@byork.uz">info@byork.uz</ф>
                     </div>
 
                     <img class="footer__inner-icon" src="./img/footer/mail.png" alt="mail-icon">
@@ -731,7 +737,7 @@
                     <div class="footer__inner-right">
                         <p class="footer__inner-title">адрес</p>
 
-                        <p class="footer__inner-text">Узбекистан, 100207, г. Ташкент, Яшнабадскийрайон, 2 проезд, ул. Чулпон, 14А</p>
+                        <a class="footer__inner-text" href="#">Узбекистан, 100207, г. Ташкент, Яшнабадскийрайон, 2 проезд, ул. Чулпон, 14А</a>
                     </div>
                 </div>
 
