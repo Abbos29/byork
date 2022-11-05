@@ -68,7 +68,7 @@ drMenu.style.height = "calc(100vh - " + header.offsetHeight + "px)";
  
 
  
-const swiper = new Swiper('.hero__swiper', {
+const swiperHero = new Swiper('.hero__swiper', {
     slidesPerView: 1,
     spaceBetween: 20,
 
