@@ -50,21 +50,21 @@ function fixedNav() {
 window.addEventListener("scroll", fixedNav);
 
 // DROPDOWN CATALOG
-const catalogBtn = document.getElementById("dropdownBtn");
+// const catalogBtn = document.getElementById("dropdownBtn");
 
-catalogBtn.onmouseover = function () {
-    catalogBtn.classList.toggle("white");
-    document.getElementById("dropdownMenu").classList.toggle("active-drop");
-    document.body.classList.toggle("lock");
-    catalogBtn.querySelector(".dropdown-btn-close").classList.toggle("active");
-    catalogBtn.querySelector(".dropdown-btn-open").classList.toggle("active");
-    // document.getElementById("bgGray").classList.toggle("bg-gray-active");
-};
+// catalogBtn.onmouseover = function () {
+//     catalogBtn.classList.toggle("white");
+//     document.getElementById("dropdownMenu").classList.toggle("active-drop");
+//     document.body.classList.toggle("lock");
+//     catalogBtn.querySelector(".dropdown-btn-close").classList.toggle("active");
+//     catalogBtn.querySelector(".dropdown-btn-open").classList.toggle("active");
+//     // document.getElementById("bgGray").classList.toggle("bg-gray-active");
+// };
 
-const header = document.querySelector('header');
-const drMenu = document.getElementById("dropdownMenu");
+// const header = document.querySelector('header');
+// const drMenu = document.getElementById("dropdownMenu");
 
-drMenu.style.height = "calc(100vh - " + header.offsetHeight + "px)";
+// drMenu.style.height = "calc(100vh - " + header.offsetHeight + "px)";
  
 
  
